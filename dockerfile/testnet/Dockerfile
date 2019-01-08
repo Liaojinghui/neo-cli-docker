@@ -14,7 +14,7 @@ RUN cd /home/ \
 	&& cd neo-cli/neo-cli \
 	&& dotnet restore \
 	&& dotnet publish -c Release \
-	&& cp -r /home/neo-cli/neo-cli/bin/Release/netcoreapp2.0/publish/ /home/cli/
+	&& cp -r /home/neo-cli/neo-cli/bin/Release/netcoreapp2.1/publish/ /home/cli/
 
 RUN cd /home/cli/ \
 	&& rm -f config.json \

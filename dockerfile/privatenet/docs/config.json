@@ -1,8 +1,13 @@
 {
   "ApplicationConfiguration": {
     "Paths": {
-      "Chain": "ChainPrivate",
-      "Notifications": "NotificationsPrivate"
+      "Chain": "test/Chain_{0}",
+      "Index": "test/Index_{0}",
+      "DumpInfos": "test//DumpInfos_{0}",
+      "Dump": true,
+      "DumpOnlyLocal": true,
+      "DumpInfo_splitCount": 1,
+      "DumpInfo_splitIndex": 0
     },
     "P2P": {
       "Port": 10333,
@@ -12,6 +17,12 @@
       "Port": 10332,
       "SslCert": "",
       "SslCertPassword": ""
+    },
+    "UnlockWallet": {
+      "Path": "",
+      "Password": "",
+      "StartConsensus": false,
+      "IsActive": false
     }
   }
 }

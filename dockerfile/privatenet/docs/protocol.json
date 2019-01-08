@@ -2,6 +2,8 @@
   "ProtocolConfiguration": {
     "Magic": 9726190,
     "AddressVersion": 23,
+    "SecondsPerBlock": 15,
+    "LowPriorityThreshold": 0.001,
     "StandbyValidators": [
       "0249b419692a17fb519c3b42ffbe82ae34855a45e54783a9bc940135b1c2753ece",
       "03298a54cdfb2b5ffae0638c60633de24e3956b76a44867475e81db5ce87b2a16b",
@@ -12,7 +14,17 @@
       "cli0:10333",
       "cli1:10333",
       "cli2:10333",
-      "cli3:10333",
+      "cli3:10333"
+    ],
+    "MongoSetting": {
+      "Conn": "",
+      "DataBase": "",
+      "DumpInfoColl": "",
+      "Block": ""
+    },
+    "MongoDbIndexs": [
+      "{\"collName\": \"dumpinfos\",\"indexs\": [{\"indexName\": \"i_txid_unique\",\"indexDefinition\": {\"txid\": 1},\"isUnique\": true}]}",
+      "{\"collName\": \"block\",\"indexs\": [{\"indexName\": \"i_index_-1_unique\",\"indexDefinition\": {\"index\": -1},\"isUnique\": true}]}"
     ],
     "SystemFee": {
       "EnrollmentTransaction": 1000,
